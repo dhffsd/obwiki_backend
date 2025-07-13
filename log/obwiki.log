@@ -1,0 +1,580 @@
+2025-07-13 00:40:17.041 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 00:40:17.054 [main] INFO  com.gec.obwiki.ObwikiApplication - Starting ObwikiApplication using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 35776 (D:\obwiki\target\classes started by ESD in D:\obwiki)
+2025-07-13 00:40:17.055 [main] INFO  com.gec.obwiki.ObwikiApplication - No active profile set, falling back to default profiles: default
+2025-07-13 00:40:17.329 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 00:40:17.872 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.gec.obwiki]' package. Please check your configuration.
+2025-07-13 00:40:18.759 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8880 (http)
+2025-07-13 00:40:18.769 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8880"]
+2025-07-13 00:40:18.769 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-13 00:40:18.770 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-07-13 00:40:18.908 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-13 00:40:18.908 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1807 ms
+2025-07-13 00:40:19.254 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-07-13 00:40:19.336 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-13 00:40:19.372 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-13 00:40:19.432 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2025-07-13 00:40:20.560 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8880"]
+2025-07-13 00:40:20.583 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8880 (http) with context path ''
+2025-07-13 00:40:20.585 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-07-13 00:40:20.602 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-07-13 00:40:20.628 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-07-13 00:40:20.759 [main] INFO  com.gec.obwiki.ObwikiApplication - Started ObwikiApplication in 4.09 seconds (JVM running for 4.55)
+2025-07-13 00:40:20.763 [main] INFO  com.gec.obwiki.ObwikiApplication - 项目启动成功!
+2025-07-13 00:40:20.763 [main] INFO  com.gec.obwiki.ObwikiApplication - 地址:	http://127.0.0.1:8880
+2025-07-13 00:42:11.570 [main] INFO  com.gec.obwiki.ObwikiApplicationTests - Starting ObwikiApplicationTests using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 17496 (started by ESD in D:\obwiki)
+2025-07-13 00:42:11.572 [main] INFO  com.gec.obwiki.ObwikiApplicationTests - No active profile set, falling back to default profiles: default
+2025-07-13 00:42:11.581 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 00:42:11.889 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 00:42:12.445 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.gec.obwiki]' package. Please check your configuration.
+2025-07-13 00:42:13.424 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-07-13 00:42:13.771 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-13 00:42:13.818 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-13 00:42:13.989 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2025-07-13 00:42:15.320 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-07-13 00:42:15.335 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-07-13 00:42:15.358 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-07-13 00:42:15.474 [main] INFO  com.gec.obwiki.ObwikiApplicationTests - Started ObwikiApplicationTests in 4.185 seconds (JVM running for 5.115)
+2025-07-13 00:42:15.771 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-07-13 00:46:51.613 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 00:46:51.622 [main] INFO  com.gec.obwiki.ObwikiApplication - Starting ObwikiApplication using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 19940 (D:\obwiki\target\classes started by ESD in D:\obwiki)
+2025-07-13 00:46:51.624 [main] INFO  com.gec.obwiki.ObwikiApplication - No active profile set, falling back to default profiles: default
+2025-07-13 00:46:51.907 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 00:46:52.407 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.gec.obwiki]' package. Please check your configuration.
+2025-07-13 00:46:53.335 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8880 (http)
+2025-07-13 00:46:53.345 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8880"]
+2025-07-13 00:46:53.345 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-13 00:46:53.346 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-07-13 00:46:53.480 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-13 00:46:53.480 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1809 ms
+2025-07-13 00:46:53.855 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-07-13 00:46:53.957 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-13 00:46:53.999 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-13 00:46:54.071 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2025-07-13 00:46:55.195 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8880"]
+2025-07-13 00:46:55.220 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8880 (http) with context path ''
+2025-07-13 00:46:55.221 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-07-13 00:46:55.241 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-07-13 00:46:55.267 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-07-13 00:46:55.398 [main] INFO  com.gec.obwiki.ObwikiApplication - Started ObwikiApplication in 4.162 seconds (JVM running for 4.623)
+2025-07-13 00:46:55.401 [main] INFO  com.gec.obwiki.ObwikiApplication - 项目启动成功!
+2025-07-13 00:46:55.401 [main] INFO  com.gec.obwiki.ObwikiApplication - 地址:	http://127.0.0.1:8880
+2025-07-13 00:48:00.013 [http-nio-8880-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13 00:48:00.014 [http-nio-8880-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-13 00:48:00.015 [http-nio-8880-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-13 00:48:00.057 [http-nio-8880-exec-2] ERROR com.gec.obwiki.exception.ObwikiExceptionAdvice - A JSONObject text must begin with '{' at 1 [character 2 line 1]
+cn.hutool.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at cn.hutool.json.JSONTokener.syntaxError(JSONTokener.java:396)
+	at cn.hutool.json.JSONObject.init(JSONObject.java:676)
+	at cn.hutool.json.JSONObject.init(JSONObject.java:663)
+	at cn.hutool.json.JSONObject.init(JSONObject.java:619)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:200)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:176)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:158)
+	at cn.hutool.json.JSONObject.<init>(JSONObject.java:141)
+	at cn.hutool.json.JSONUtil.parseObj(JSONUtil.java:89)
+	at com.gec.obwiki.config.xss.XssHttpServletRequestWrapper.getInputStream(XssHttpServletRequestWrapper.java:89)
+	at org.springframework.http.server.ServletServerHttpRequest.getBody(ServletServerHttpRequest.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver$EmptyBodyCheckingHttpInputMessage.<init>(AbstractMessageConverterMethodArgumentResolver.java:317)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:194)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.gec.obwiki.config.xss.XssFilter.doFilter(XssFilter.java:19)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2025-07-13 00:48:21.345 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-07-13 00:49:42.154 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 00:49:42.165 [main] INFO  com.gec.obwiki.ObwikiApplication - Starting ObwikiApplication using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 34256 (D:\obwiki\target\classes started by ESD in D:\obwiki)
+2025-07-13 00:49:42.166 [main] INFO  com.gec.obwiki.ObwikiApplication - No active profile set, falling back to default profiles: default
+2025-07-13 00:49:42.432 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 00:49:42.953 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.gec.obwiki]' package. Please check your configuration.
+2025-07-13 00:49:43.873 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8880 (http)
+2025-07-13 00:49:43.882 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8880"]
+2025-07-13 00:49:43.882 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-13 00:49:43.883 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-07-13 00:49:44.020 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-13 00:49:44.020 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1808 ms
+2025-07-13 00:49:44.379 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-07-13 00:49:44.456 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-13 00:49:44.492 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-13 00:49:44.552 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2025-07-13 00:49:45.641 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8880"]
+2025-07-13 00:49:45.663 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8880 (http) with context path ''
+2025-07-13 00:49:45.664 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-07-13 00:49:45.682 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-07-13 00:49:45.704 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-07-13 00:49:45.819 [main] INFO  com.gec.obwiki.ObwikiApplication - Started ObwikiApplication in 4.033 seconds (JVM running for 4.489)
+2025-07-13 00:49:45.822 [main] INFO  com.gec.obwiki.ObwikiApplication - 项目启动成功!
+2025-07-13 00:49:45.822 [main] INFO  com.gec.obwiki.ObwikiApplication - 地址:	http://127.0.0.1:8880
+2025-07-13 00:49:52.426 [http-nio-8880-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13 00:49:52.427 [http-nio-8880-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-13 00:49:52.427 [http-nio-8880-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-07-13 00:49:52.461 [http-nio-8880-exec-1] ERROR com.gec.obwiki.exception.ObwikiExceptionAdvice - Required request body is missing: public com.gec.obwiki.resp.CommonResp com.gec.obwiki.controller.TestController.sayHello(com.gec.obwiki.req.DemoReq)
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.gec.obwiki.resp.CommonResp com.gec.obwiki.controller.TestController.sayHello(com.gec.obwiki.req.DemoReq)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.gec.obwiki.config.xss.XssFilter.doFilter(XssFilter.java:19)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2025-07-13 00:50:03.005 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 00:50:03.016 [main] INFO  com.gec.obwiki.ObwikiApplication - Starting ObwikiApplication using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 12868 (D:\obwiki\target\classes started by ESD in D:\obwiki)
+2025-07-13 00:50:03.017 [main] INFO  com.gec.obwiki.ObwikiApplication - No active profile set, falling back to default profiles: default
+2025-07-13 00:50:03.311 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 00:50:03.818 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.gec.obwiki]' package. Please check your configuration.
+2025-07-13 00:50:04.698 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8880 (http)
+2025-07-13 00:50:04.708 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8880"]
+2025-07-13 00:50:04.708 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-13 00:50:04.708 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-07-13 00:50:04.845 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-13 00:50:04.845 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1782 ms
+2025-07-13 00:50:05.189 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-07-13 00:50:05.278 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-13 00:50:05.316 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-13 00:50:05.380 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2025-07-13 00:50:06.510 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8880"]
+2025-07-13 00:50:06.531 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8880 (http) with context path ''
+2025-07-13 00:50:06.532 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-07-13 00:50:06.549 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-07-13 00:50:06.570 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-07-13 00:50:06.684 [main] INFO  com.gec.obwiki.ObwikiApplication - Started ObwikiApplication in 4.049 seconds (JVM running for 4.546)
+2025-07-13 00:50:06.687 [main] INFO  com.gec.obwiki.ObwikiApplication - 项目启动成功!
+2025-07-13 00:50:06.688 [main] INFO  com.gec.obwiki.ObwikiApplication - 地址:	http://127.0.0.1:8880
+2025-07-13 00:50:27.506 [http-nio-8880-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13 00:50:27.508 [http-nio-8880-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-13 00:50:27.509 [http-nio-8880-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-13 00:50:27.662 [http-nio-8880-exec-2] ERROR com.gec.obwiki.exception.ObwikiExceptionAdvice - 数据校验出现问题Validation failed for argument [0] in public com.gec.obwiki.resp.CommonResp com.gec.obwiki.controller.TestController.sayHello(com.gec.obwiki.req.DemoReq) with 3 errors: [Field error in object 'demoReq' on field 'password': rejected value [123]; codes [Length.demoReq.password,Length.password,Length.java.lang.String,Length]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [demoReq.password,password]; arguments []; default message [password],20,6]; default message [密码必须是6-20位字符]] [Field error in object 'demoReq' on field 'phone': rejected value [123]; codes [Pattern.demoReq.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [demoReq.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@5f8cfb3b,^1[3|4|5|6|7|8|9][0-9]{9}$]; default message [手机号格式不正确！]] [Field error in object 'demoReq' on field 'name': rejected value [a]; codes [Pattern.demoReq.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [demoReq.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@5f8cfb3b,^[\u4e00-\u9fa5]{2,15}$]; default message [姓名应为2-15中文]] ,异常类型class org.springframework.web.bind.MethodArgumentNotValidException
+2025-07-13 01:04:07.699 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 01:04:07.712 [main] INFO  com.gec.obwiki.ObwikiApplication - Starting ObwikiApplication using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 28840 (D:\obwiki\target\classes started by ESD in D:\obwiki)
+2025-07-13 01:04:07.713 [main] INFO  com.gec.obwiki.ObwikiApplication - No active profile set, falling back to default profiles: default
+2025-07-13 01:04:07.970 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 01:04:08.476 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.gec.obwiki]' package. Please check your configuration.
+2025-07-13 01:04:09.375 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8880 (http)
+2025-07-13 01:04:09.387 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8880"]
+2025-07-13 01:04:09.388 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-13 01:04:09.388 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-07-13 01:04:09.534 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-13 01:04:09.535 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1780 ms
+2025-07-13 01:04:09.888 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-07-13 01:04:09.971 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-13 01:04:10.008 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-13 01:04:10.065 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2025-07-13 01:04:11.151 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8880"]
+2025-07-13 01:04:11.176 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8880 (http) with context path ''
+2025-07-13 01:04:11.177 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-07-13 01:04:11.192 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-07-13 01:04:11.212 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-07-13 01:04:11.317 [main] INFO  com.gec.obwiki.ObwikiApplication - Started ObwikiApplication in 3.995 seconds (JVM running for 4.472)
+2025-07-13 01:04:11.320 [main] INFO  com.gec.obwiki.ObwikiApplication - 项目启动成功!
+2025-07-13 01:04:11.321 [main] INFO  com.gec.obwiki.ObwikiApplication - 地址:	http://127.0.0.1:8880
+2025-07-13 01:04:18.747 [http-nio-8880-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13 01:04:18.749 [http-nio-8880-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-13 01:04:18.750 [http-nio-8880-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-13 01:04:18.896 [http-nio-8880-exec-4] ERROR com.gec.obwiki.exception.ObwikiExceptionAdvice - 数据校验出现问题Validation failed for argument [0] in public com.gec.obwiki.resp.CommonResp com.gec.obwiki.controller.TestController.sayHello(com.gec.obwiki.req.DemoReq) with 2 errors: [Field error in object 'demoReq' on field 'name': rejected value [admin]; codes [Pattern.demoReq.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [demoReq.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@12bb45e5,^[\u4e00-\u9fa5]{2,15}$]; default message [姓名应为2-15中文]] [Field error in object 'demoReq' on field 'phone': rejected value [123]; codes [Pattern.demoReq.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [demoReq.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@12bb45e5,^1[3|4|5|6|7|8|9][0-9]{9}$]; default message [手机号格式不正确！]] ,异常类型class org.springframework.web.bind.MethodArgumentNotValidException
+2025-07-13 01:04:56.545 [http-nio-8880-exec-5] ERROR com.gec.obwiki.exception.ObwikiExceptionAdvice - 数据校验出现问题Validation failed for argument [0] in public com.gec.obwiki.resp.CommonResp com.gec.obwiki.controller.TestController.sayHello(com.gec.obwiki.req.DemoReq): [Field error in object 'demoReq' on field 'name': rejected value [admin]; codes [Pattern.demoReq.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [demoReq.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@12bb45e5,^[\u4e00-\u9fa5]{2,15}$]; default message [姓名应为2-15中文]] ,异常类型class org.springframework.web.bind.MethodArgumentNotValidException
+2025-07-13 01:05:35.155 [http-nio-8880-exec-2] ERROR com.gec.obwiki.exception.ObwikiExceptionAdvice - JSON parse error: Invalid UTF-8 start byte 0xb9; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Invalid UTF-8 start byte 0xb9
+ at [Source: (PushbackInputStream); line: 1, column: 53] (through reference chain: com.gec.obwiki.req.DemoReq["name"])
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid UTF-8 start byte 0xb9; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Invalid UTF-8 start byte 0xb9
+ at [Source: (PushbackInputStream); line: 1, column: 53] (through reference chain: com.gec.obwiki.req.DemoReq["name"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:285)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:243)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.gec.obwiki.config.xss.XssFilter.doFilter(XssFilter.java:19)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Invalid UTF-8 start byte 0xb9
+ at [Source: (PushbackInputStream); line: 1, column: 53] (through reference chain: com.gec.obwiki.req.DemoReq["name"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:397)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:356)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1726)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:373)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:164)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4526)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3521)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:274)
+	... 54 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Invalid UTF-8 start byte 0xb9
+ at [Source: (PushbackInputStream); line: 1, column: 53]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:707)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidInitial(UTF8StreamJsonParser.java:3601)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidChar(UTF8StreamJsonParser.java:3597)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._finishString2(UTF8StreamJsonParser.java:2540)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._finishAndReturnString(UTF8StreamJsonParser.java:2466)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.getText(UTF8StreamJsonParser.java:297)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:35)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:10)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:371)
+	... 58 common frames omitted
+2025-07-13 01:05:50.822 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 01:05:50.832 [main] INFO  com.gec.obwiki.ObwikiApplication - Starting ObwikiApplication using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 15048 (D:\obwiki\target\classes started by ESD in D:\obwiki)
+2025-07-13 01:05:50.834 [main] INFO  com.gec.obwiki.ObwikiApplication - No active profile set, falling back to default profiles: default
+2025-07-13 01:05:51.121 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 01:05:51.608 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.gec.obwiki]' package. Please check your configuration.
+2025-07-13 01:05:52.460 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8880 (http)
+2025-07-13 01:05:52.470 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8880"]
+2025-07-13 01:05:52.472 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-13 01:05:52.472 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-07-13 01:05:52.603 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-13 01:05:52.604 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1723 ms
+2025-07-13 01:05:52.958 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-07-13 01:05:53.043 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-13 01:05:53.079 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-13 01:05:53.140 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2025-07-13 01:05:54.254 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8880"]
+2025-07-13 01:05:54.276 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8880 (http) with context path ''
+2025-07-13 01:05:54.277 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-07-13 01:05:54.293 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-07-13 01:05:54.315 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-07-13 01:05:54.429 [main] INFO  com.gec.obwiki.ObwikiApplication - Started ObwikiApplication in 3.992 seconds (JVM running for 4.486)
+2025-07-13 01:05:54.431 [main] INFO  com.gec.obwiki.ObwikiApplication - 项目启动成功!
+2025-07-13 01:05:54.433 [main] INFO  com.gec.obwiki.ObwikiApplication - 地址:	http://127.0.0.1:8880
+2025-07-13 01:05:59.864 [http-nio-8880-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13 01:05:59.866 [http-nio-8880-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-13 01:05:59.867 [http-nio-8880-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-13 01:05:59.978 [http-nio-8880-exec-2] ERROR com.gec.obwiki.exception.ObwikiExceptionAdvice - JSON parse error: Invalid UTF-8 start byte 0xb9; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Invalid UTF-8 start byte 0xb9
+ at [Source: (PushbackInputStream); line: 1, column: 53] (through reference chain: com.gec.obwiki.req.DemoReq["name"])
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid UTF-8 start byte 0xb9; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Invalid UTF-8 start byte 0xb9
+ at [Source: (PushbackInputStream); line: 1, column: 53] (through reference chain: com.gec.obwiki.req.DemoReq["name"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:285)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:243)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:158)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.gec.obwiki.config.xss.XssFilter.doFilter(XssFilter.java:19)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Invalid UTF-8 start byte 0xb9
+ at [Source: (PushbackInputStream); line: 1, column: 53] (through reference chain: com.gec.obwiki.req.DemoReq["name"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:397)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:356)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1726)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:373)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:164)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4526)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3521)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:274)
+	... 54 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Invalid UTF-8 start byte 0xb9
+ at [Source: (PushbackInputStream); line: 1, column: 53]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:707)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidInitial(UTF8StreamJsonParser.java:3601)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidChar(UTF8StreamJsonParser.java:3597)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._finishString2(UTF8StreamJsonParser.java:2540)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._finishAndReturnString(UTF8StreamJsonParser.java:2466)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.getText(UTF8StreamJsonParser.java:297)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:35)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:10)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:371)
+	... 58 common frames omitted
+2025-07-13 01:07:29.539 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 01:07:29.550 [main] INFO  com.gec.obwiki.ObwikiApplication - Starting ObwikiApplication using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 37592 (D:\obwiki\target\classes started by ESD in D:\obwiki)
+2025-07-13 01:07:29.552 [main] INFO  com.gec.obwiki.ObwikiApplication - No active profile set, falling back to default profiles: default
+2025-07-13 01:07:29.853 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 01:07:30.359 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'characterEncodingFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]] for bean 'characterEncodingFilter': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=characterEncodingConfig; factoryMethodName=characterEncodingFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/gec/obwiki/config/CharacterEncodingConfig.class]] bound.
+2025-07-13 01:07:30.367 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-13 01:07:30.379 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'characterEncodingFilter', defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/gec/obwiki/config/CharacterEncodingConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-07-13 01:07:43.730 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 01:07:43.741 [main] INFO  com.gec.obwiki.ObwikiApplication - Starting ObwikiApplication using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 14660 (D:\obwiki\target\classes started by ESD in D:\obwiki)
+2025-07-13 01:07:43.742 [main] INFO  com.gec.obwiki.ObwikiApplication - No active profile set, falling back to default profiles: default
+2025-07-13 01:07:44.008 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 01:07:44.475 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'characterEncodingFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]] for bean 'characterEncodingFilter': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=characterEncodingConfig; factoryMethodName=characterEncodingFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/gec/obwiki/config/CharacterEncodingConfig.class]] bound.
+2025-07-13 01:07:44.483 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-13 01:07:44.495 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'characterEncodingFilter', defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/gec/obwiki/config/CharacterEncodingConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-07-13 01:10:37.562 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 01:10:37.584 [main] INFO  com.gec.obwiki.ObwikiApplication - Starting ObwikiApplication using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 47568 (D:\obwiki\target\classes started by ESD in D:\obwiki)
+2025-07-13 01:10:37.585 [main] INFO  com.gec.obwiki.ObwikiApplication - No active profile set, falling back to default profiles: default
+2025-07-13 01:10:37.905 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 01:10:38.436 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.gec.obwiki]' package. Please check your configuration.
+2025-07-13 01:10:39.343 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8880 (http)
+2025-07-13 01:10:39.355 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8880"]
+2025-07-13 01:10:39.356 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-13 01:10:39.356 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-07-13 01:10:39.502 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-13 01:10:39.503 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1872 ms
+2025-07-13 01:10:39.877 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-07-13 01:10:39.966 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-13 01:10:40.004 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-13 01:10:40.063 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2025-07-13 01:10:41.240 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8880"]
+2025-07-13 01:10:41.264 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8880 (http) with context path ''
+2025-07-13 01:10:41.265 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-07-13 01:10:41.288 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-07-13 01:10:41.312 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-07-13 01:10:41.450 [main] INFO  com.gec.obwiki.ObwikiApplication - Started ObwikiApplication in 4.277 seconds (JVM running for 4.742)
+2025-07-13 01:10:41.455 [main] INFO  com.gec.obwiki.ObwikiApplication - 项目启动成功!
+2025-07-13 01:10:41.455 [main] INFO  com.gec.obwiki.ObwikiApplication - 地址:	http://127.0.0.1:8880
+2025-07-13 01:11:26.362 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 01:11:26.380 [main] INFO  com.gec.obwiki.ObwikiApplication - Starting ObwikiApplication using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 16932 (D:\obwiki\target\classes started by ESD in D:\obwiki)
+2025-07-13 01:11:26.381 [main] INFO  com.gec.obwiki.ObwikiApplication - No active profile set, falling back to default profiles: default
+2025-07-13 01:11:26.660 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 01:11:27.153 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.gec.obwiki]' package. Please check your configuration.
+2025-07-13 01:11:28.006 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8880 (http)
+2025-07-13 01:11:28.015 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8880"]
+2025-07-13 01:11:28.015 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-13 01:11:28.016 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-07-13 01:11:28.154 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-13 01:11:28.154 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1727 ms
+2025-07-13 01:11:28.515 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-07-13 01:11:28.599 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-13 01:11:28.634 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-13 01:11:28.689 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2025-07-13 01:11:29.823 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8880"]
+2025-07-13 01:11:29.849 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8880 (http) with context path ''
+2025-07-13 01:11:29.850 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-07-13 01:11:29.870 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-07-13 01:11:29.894 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-07-13 01:11:30.029 [main] INFO  com.gec.obwiki.ObwikiApplication - Started ObwikiApplication in 4.031 seconds (JVM running for 4.481)
+2025-07-13 01:11:30.031 [main] INFO  com.gec.obwiki.ObwikiApplication - 项目启动成功!
+2025-07-13 01:11:30.033 [main] INFO  com.gec.obwiki.ObwikiApplication - 地址:	http://127.0.0.1:8880
+2025-07-13 01:11:34.068 [http-nio-8880-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13 01:11:34.069 [http-nio-8880-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-13 01:11:34.070 [http-nio-8880-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-13 08:55:28.939 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+2025-07-13 08:55:28.963 [main] INFO  com.gec.obwiki.ObwikiApplication - Starting ObwikiApplication using Java 11.0.23 on LAPTOP-NCVJ9E5H with PID 48712 (D:\obwiki\target\classes started by ESD in D:\obwiki)
+2025-07-13 08:55:28.965 [main] INFO  com.gec.obwiki.ObwikiApplication - No active profile set, falling back to default profiles: default
+2025-07-13 08:55:29.266 [background-preinit] WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2025-07-13 08:55:29.863 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.gec.obwiki]' package. Please check your configuration.
+2025-07-13 08:55:30.856 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8880 (http)
+2025-07-13 08:55:30.868 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8880"]
+2025-07-13 08:55:30.868 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-13 08:55:30.869 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-07-13 08:55:31.008 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-13 08:55:31.008 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1990 ms
+2025-07-13 08:55:31.388 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-07-13 08:55:31.473 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-13 08:55:31.510 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-13 08:55:31.581 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2025-07-13 08:55:32.736 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8880"]
+2025-07-13 08:55:32.765 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8880 (http) with context path ''
+2025-07-13 08:55:32.766 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-07-13 08:55:32.783 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-07-13 08:55:32.803 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-07-13 08:55:32.920 [main] INFO  com.gec.obwiki.ObwikiApplication - Started ObwikiApplication in 4.392 seconds (JVM running for 4.93)
+2025-07-13 08:55:32.923 [main] INFO  com.gec.obwiki.ObwikiApplication - 项目启动成功!
+2025-07-13 08:55:32.924 [main] INFO  com.gec.obwiki.ObwikiApplication - 地址:	http://127.0.0.1:8880
+2025-07-13 08:55:42.290 [http-nio-8880-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13 08:55:42.291 [http-nio-8880-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-13 08:55:42.292 [http-nio-8880-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-13 08:55:42.455 [http-nio-8880-exec-2] ERROR com.gec.obwiki.exception.ObwikiExceptionAdvice - 数据校验出现问题Validation failed for argument [0] in public com.gec.obwiki.resp.CommonResp com.gec.obwiki.controller.TestController.sayHello(com.gec.obwiki.req.DemoReq): [Field error in object 'demoReq' on field 'name': rejected value [<script>alert('XSS')</script>]; codes [Pattern.demoReq.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [demoReq.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@3a16369e,^[\u4e00-\u9fa5]{2,15}$]; default message [姓名应为2-15中文]] ,异常类型class org.springframework.web.bind.MethodArgumentNotValidException
