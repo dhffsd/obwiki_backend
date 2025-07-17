@@ -22,33 +22,24 @@ CREATE TABLE `user` (
 
 -- 分类表
 CREATE TABLE `category` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '分类ID',
-  `name` varchar(100) NOT NULL COMMENT '分类名称',
-  `description` text COMMENT '分类描述',
-  `parent_id` bigint(20) DEFAULT '0' COMMENT '父分类ID',
-  `sort` int(11) DEFAULT '0' COMMENT '排序',
-  `status` tinyint(1) DEFAULT '1' COMMENT '状态：0-禁用，1-启用',
-  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `update_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `id` bigint NOT NULL COMMENT 'ID',
+  `name` varchar(50) NOT NULL COMMENT '名称',
+  `parent` bigint NOT NULL COMMENT '父分类ID',
+  `sort` int NOT NULL COMMENT '排序',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='分类表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='分类表';
 
 -- 文档表
 CREATE TABLE `doc` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '文档ID',
-  `title` varchar(200) NOT NULL COMMENT '文档标题',
-  `content` longtext COMMENT '文档内容',
-  `category_id` bigint(20) DEFAULT NULL COMMENT '分类ID',
-  `author_id` bigint(20) DEFAULT NULL COMMENT '作者ID',
-  `view_count` int(11) DEFAULT '0' COMMENT '浏览次数',
-  `like_count` int(11) DEFAULT '0' COMMENT '点赞次数',
-  `status` tinyint(1) DEFAULT '1' COMMENT '状态：0-草稿，1-发布',
-  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `update_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
-  PRIMARY KEY (`id`),
-  KEY `idx_category_id` (`category_id`),
-  KEY `idx_author_id` (`author_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='文档表';
+  `id` bigint NOT NULL COMMENT 'ID',
+  `ebook_id` bigint NOT NULL COMMENT '电子书ID',
+  `parent` bigint NOT NULL COMMENT '父文档ID',
+  `name` varchar(200) NOT NULL COMMENT '文档名称',
+  `sort` int NOT NULL COMMENT '排序',
+  `view_count` int DEFAULT '0' COMMENT '浏览次数',
+  `vote_count` int DEFAULT '0' COMMENT '点赞次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='文档表';
 
 -- 电子书表
 CREATE TABLE `ebook` (
@@ -84,36 +75,41 @@ CREATE TABLE `ebook_snapshot` (
 
 -- 内容表
 CREATE TABLE `content` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '内容ID',
-  `title` varchar(200) NOT NULL COMMENT '内容标题',
+  `id` bigint NOT NULL COMMENT 'ID',
   `content` longtext COMMENT '内容详情',
-  `type` varchar(50) DEFAULT NULL COMMENT '内容类型',
-  `related_id` bigint(20) DEFAULT NULL COMMENT '关联ID',
-  `sort` int(11) DEFAULT '0' COMMENT '排序',
-  `status` tinyint(1) DEFAULT '1' COMMENT '状态：0-禁用，1-启用',
-  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `update_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
-  PRIMARY KEY (`id`),
-  KEY `idx_type` (`type`),
-  KEY `idx_related_id` (`related_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='内容表';
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='内容表';
 
 -- 插入测试数据
 INSERT INTO `user` (`login_name`, `nickname`, `password`, `email`, `phone`) VALUES
 ('admin', '管理员', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iKTVEFDi', 'admin@obwiki.com', '13800138000'),
 ('test', '测试用户', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iKTVEFDi', 'test@obwiki.com', '13800138001');
 
-INSERT INTO `category` (`name`, `description`, `parent_id`, `sort`) VALUES
-('海洋鱼类', '各种海洋鱼类的介绍', 0, 1),
-('海洋哺乳动物', '鲸鱼、海豚等海洋哺乳动物', 0, 2),
-('海洋无脊椎动物', '珊瑚、海星等无脊椎动物', 0, 3),
-('鲨鱼', '各种鲨鱼品种', 1, 1),
-('热带鱼', '热带海域的鱼类', 1, 2);
+INSERT INTO `category` (`id`, `name`, `parent`, `sort`) VALUES
+(1, '海洋鱼类', 0, 1),
+(2, '海洋哺乳动物', 0, 2),
+(3, '海洋无脊椎动物', 0, 3),
+(4, '热带鱼', 1, 1),
+(5, '冷水鱼', 1, 2),
+(6, '鲸类', 2, 1),
+(7, '海豚类', 2, 2),
+(8, '甲壳类', 3, 1),
+(9, '软体动物', 3, 2);
 
-INSERT INTO `doc` (`title`, `content`, `category_id`, `author_id`, `view_count`, `like_count`) VALUES
-('大白鲨介绍', '大白鲨是海洋中最著名的掠食者之一...', 4, 1, 100, 50),
-('海豚的智慧', '海豚是海洋中最聪明的动物之一...', 2, 1, 80, 30);
+INSERT INTO `doc` (`id`, `ebook_id`, `parent`, `name`, `sort`, `view_count`, `vote_count`) VALUES
+(1, 1, 0, '第一章 海洋鱼类概述', 1, 100, 50),
+(2, 1, 1, '1.1 热带鱼介绍', 1, 80, 30),
+(3, 1, 1, '1.2 冷水鱼介绍', 2, 60, 20),
+(4, 2, 0, '第一章 海洋哺乳动物', 1, 120, 80),
+(5, 2, 4, '1.1 鲸类介绍', 1, 90, 45);
 
 INSERT INTO `ebook` (`title`, `description`, `author_id`, `category_id`, `view_count`, `like_count`) VALUES
 ('海洋生物图鉴', '一本详细介绍海洋生物的电子书', 1, 1, 200, 100),
-('深海探索', '探索深海中的神秘生物', 1, 2, 150, 75); 
+('深海探索', '探索深海中的神秘生物', 1, 2, 150, 75);
+
+INSERT INTO `content` (`id`, `content`) VALUES
+(1, '海洋鱼类是海洋生态系统中的重要组成部分，它们种类繁多，形态各异。本章将详细介绍海洋鱼类的分类、特征和习性。'),
+(2, '热带鱼主要分布在热带海域，它们色彩艳丽，体型较小，是观赏鱼的主要来源。'),
+(3, '冷水鱼主要分布在寒带和温带海域，它们体型较大，肉质鲜美，是重要的经济鱼类。'),
+(4, '海洋哺乳动物是海洋中最具智慧的生物，包括鲸类、海豚类等。它们具有高度的社会性和智慧。'),
+(5, '鲸类是海洋中最大的哺乳动物，包括蓝鲸、抹香鲸等。它们具有复杂的社交行为和迁徙习性。'); 

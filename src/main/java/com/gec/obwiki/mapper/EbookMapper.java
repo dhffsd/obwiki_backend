@@ -1,0 +1,10 @@
+package com.gec.obwiki.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.gec.obwiki.entity.Ebook;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface EbookMapper extends BaseMapper<Ebook> {
+    void increaseVoteCount(Long id);
+} 

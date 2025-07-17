@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gec.obwiki.mapper.EbookSnapshotMapper">
+
+    <!-- 生成今天的快照记录 -->
+    <insert id="genTodaySnapshot">
+        INSERT INTO ebook_snapshot (ebook_id, `date`)
+        SELECT id, CURDATE() FROM ebook
+        WHERE NOT EXISTS (
+            SELECT 1 FROM ebook_snapshot 
+            WHERE ebook_id = ebook.id AND `date` = CURDATE()
+        )
+    </insert>
+
+    <!-- 更新阅读数 -->
+    <update id="updateSnapshotViewCount">
+        UPDATE ebook_snapshot t1, ebook t2
+        SET t1.view_count = t2.view_count
+        WHERE t1.ebook_id = t2.id
+        AND t1.`date` = CURDATE()
+    </update>
+
+    <!-- 更新点赞数 -->
+    <update id="updateSnapshotLikeCount">
+        UPDATE ebook_snapshot t1, ebook t2
+        SET t1.like_count = t2.like_count
+        WHERE t1.ebook_id = t2.id
+        AND t1.`date` = CURDATE()
+    </update>
+
+    <!-- 计算增长量 -->
+    <update id="updateSnapshotIncrease">
+        UPDATE ebook_snapshot t1
+        LEFT JOIN ebook_snapshot t2 
+            ON t1.ebook_id = t2.ebook_id 
+            AND t2.`date` = DATE_SUB(CURDATE(), INTERVAL 1 DAY)
+        SET 
+            t1.view_increase = t1.view_count - IFNULL(t2.view_count, 0),
+            t1.like_increase = t1.like_count - IFNULL(t2.like_count, 0)
+        WHERE t1.`date` = CURDATE()
+    </update>
+
+    <!-- 查询某天的统计 -->
+    <select id="getByDate" resultType="com.gec.obwiki.entity.EbookSnapshot">
+        SELECT 
+            SUM(view_count) AS totalViewCount,
+            SUM(like_count) AS totalLikeCount,
+            SUM(view_increase) AS viewIncrease,
+            SUM(like_increase) AS likeIncrease
+        FROM ebook_snapshot
+        WHERE `date` = #{date}
+    </select>
+
+    <!-- 30天趋势 -->
+    <select id="get30DayTrend" resultType="com.gec.obwiki.resp.TrendStatisticResp">
+        SELECT 
+            `date`,
+            SUM(view_count) AS viewCount,
+            SUM(like_count) AS likeCount
+        FROM ebook_snapshot
+        WHERE `date` >= DATE_SUB(CURDATE(), INTERVAL 30 DAY)
+        GROUP BY `date`
+        ORDER BY `date` ASC
+    </select>
+
+</mapper> 
